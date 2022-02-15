@@ -1,11 +1,3 @@
 # frozen_string_literal: true
-
-require "active_support"
-require "redis"
-require "redis-activesupport"
-
-require "active_support/cache/redis_hash_store"
-
-module RedisHashStore
-  mattr_accessor :logger, :cache
-end
+require "active_support/cache/redis_cache_store"
+require_relative "active_support/cache/redis_hash_store"
